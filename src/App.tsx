@@ -1,7 +1,20 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import HomePage from "./pages/HomePage";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+const queryClient = new QueryClient();
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+]);
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  );
 }
