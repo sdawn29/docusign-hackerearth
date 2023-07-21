@@ -1,27 +1,44 @@
-# React + TypeScript + Vite
+# Emoji Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div class="file-problem complete-problem-statement black-333"><p>Develop a pseudo front end application that lets users conveniently list and browse all emojis.</p>
+<p><strong>[Minimum requirement]</strong>&nbsp; (Entry-level)</p>
+<ul>
+<li>Use of Web API to fetch emoji details. ✅</li>  
+<li>Utilize Response parameters: [name, category, group, htmlCode] ✅</li>
+<li>Implement functionality to list the HTML code of emojis on a web page.✅</li>
+<li>The design should be responsive for mobile, tablet, and desktop views.✅</li>
+<li>Visually interactive design to list​ the other details.✅</li>
+<li>
+<p>Display all emojis in the card layout with all the response parameters.✅</p>
+</li>
+<li>
+<p>Submit <strong>Screenshots, Source codes, and instructions </strong>in a ZIP file.✅</p>
+</li>
+</ul>
+<p><strong>[Plus point]</strong> (Intermediate)</p>
+<ul>
+<li>A feature to filter the emojis by "category"✅</li>
+<li>Pagination feature to list 10 emojis on a page.❌</li>
+</ul>
+<p><strong>[Guide]</strong></p>
+<ul>
+<li>Emoji&nbsp; API: <a href="https://emojihub.yurace.pro/api/all" target="_blank"><u>https://emojihub.yurace.pro/api/all</u></a></li>
+</ul>
+<p><strong>Note</strong>: Use this API to Fetch Emoji details.</p></div>
 
-Currently, two official plugins are available:
+## Steps to run the code
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```shell
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Screenshots
+
+### Desktop
+
+![Desktop](screenshots/Screenshot-dektop.png)
+
+### Mobile
+
+![Mobile](screenshots/Screenshot-mobile.png)

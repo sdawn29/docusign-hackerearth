@@ -20,7 +20,8 @@ export default function HomePage() {
   if (query.isError) return <div>Error occured</div>;
 
   return (
-    <div className="p-16 flex flex-col gap-16">
+    <div className="px-4 sm:px-8 py-8 flex flex-col gap-8">
+      <div className="text-4xl">Emoji Hub</div>
       <div className="flex flex-col gap-2">
         <label htmlFor="categories" className="font-semibold">
           Choose Category
